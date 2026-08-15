@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammad Sayyadi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAFAF7;
+  --ink:#1F2229;
+  --gray:#6E6E68;
+  --accent:#CE6A3E;
+  --dusk:#33465C;
+  --rule:#E4E2DA;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Source Serif 4', Georgia, serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+.sans{font-family:'Inter', sans-serif;}
+a{color:var(--dusk);}
+.wrap{max-width:760px;margin:0 auto;padding:0 28px;}
+
+/* nav */
+nav{border-bottom:1px solid var(--rule);}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 28px;flex-wrap:wrap;gap:12px;}
+.wordmark{font-family:'Fraunces', serif;font-weight:500;font-size:16px;text-decoration:none;color:var(--ink);}
+nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex-wrap:wrap;}
+nav a{font-family:'Inter', sans-serif;text-decoration:none;color:var(--gray);font-size:13px;}
+nav a.active,nav a:hover{color:var(--ink);}
+
+/* header with headshot */
+.intro{padding:56px 0 8px;}
+.intro-row{display:flex;gap:40px;align-items:flex-start;}
+.intro-photo{flex:0 0 172px;width:172px;}
+.intro-photo img{width:100%;height:auto;display:block;border-radius:3px;}
+.intro-text{flex:1 1 auto;min-width:0;}
+.hero-eyebrow{font-family:'Inter', sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);margin:0 0 10px;}
+.intro-text h1{font-family:'Fraunces', serif;font-weight:500;font-size:38px;line-height:1.05;margin:0 0 8px;letter-spacing:-0.01em;}
+.intro-text .role{font-family:'Inter', sans-serif;font-size:15px;color:var(--gray);margin:0;max-width:520px;}
+
+/* bio */
+main{padding:36px 0 0;}
+.bio p{font-size:17px;margin:0 0 18px;}
+
+/* activity list (replaces photo strip) */
+.activity{padding:44px 0 8px;border-top:1px solid var(--rule);margin-top:36px;}
+.activity-label{font-family:'Inter', sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin:0 0 18px;}
+.activity-list{list-style:none;margin:0;padding:0;}
+.activity-list li{display:flex;gap:18px;padding:14px 0;border-bottom:1px solid var(--rule);}
+.activity-list li:last-child{border-bottom:none;}
+.activity-date{font-family:'Inter', sans-serif;font-size:12px;color:var(--gray);flex:0 0 96px;padding-top:2px;}
+.activity-desc{font-size:15.5px;flex:1 1 auto;}
+.activity-desc em{font-style:italic;}
+
+/* links */
+.links{padding:44px 0 52px;}
+.links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.linkcard{display:block;border-top:2px solid var(--ink);padding:16px 0 0;text-decoration:none;color:var(--ink);}
+.linkcard .k{font-family:'Inter', sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--gray);display:block;margin-bottom:6px;}
+.linkcard .t{font-family:'Fraunces', serif;font-weight:500;font-size:17px;}
+
+/* beyond research, text only now */
+.beyond{padding:32px 0 60px;border-top:1px solid var(--rule);}
+.beyond-label{font-family:'Inter', sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin:0 0 8px;}
+.beyond p{font-size:15.5px;color:var(--gray);margin:0 0 22px;max-width:560px;}
+.beyond-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.beyond-grid img{width:100%;height:160px;object-fit:cover;display:block;filter:saturate(1.05);border-radius:2px;}
+
+footer{padding:0 0 48px;font-family:'Inter', sans-serif;font-size:12px;color:var(--gray);}
+
+@media (max-width:600px){
+  .intro-row{flex-direction:column;gap:24px;}
+  .intro-photo{width:140px;flex-basis:140px;}
+  .intro-text h1{font-size:32px;}
+  .links-grid,.beyond-grid{grid-template-columns:1fr;}
+  .activity-list li{flex-direction:column;gap:4px;}
+  .activity-date{flex:none;}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="wordmark" href="index.html">Mohammad Sayyadi</a>
+  <ul>
+    <li><a href="index.html" class="active">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="#">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div></nav>
+
+<div class="intro"><div class="wrap">
+  <div class="intro-row">
+    <div class="intro-photo">
+      <img src="images/headshot.jpg" alt="Portrait of Mohammad Sayyadi">
+    </div>
+    <div class="intro-text">
+      <p class="hero-eyebrow">Ph.D. Candidate, Political Science — FIU</p>
+      <h1>Mohammad Sayyadi</h1>
+      <p class="role">Comparative politics, political economy, and the politics of the Middle East and Iran.</p>
+    </div>
+  </div>
+</div></div>
+
+<main><div class="wrap">
+  <div class="bio">
+    <p>I'm a comparativist with research interests in democracies and autocracies, as well as the political economy of the Global South, particularly the Middle East and Iran. My research follows two paths: the political economy of post-revolutionary states, and the mechanisms through which states perpetuate corruption, monopoly, and rent-seeking — and how these shape trust in political institutions across democracies and autocracies.</p>
+    <p>My dissertation, <em>Putting the "Take" in Takeover: Causes and Consequences of Confiscation as a Revolutionary Practice</em>, is chaired by Eric Lob, with Todd Makse, Eduardo Gamarra, and Zachary Levenson (Sociology) on the committee. I earned an M.A. in Political Science from Florida International University in 2024, and an M.A. from the University of Tehran, Iran, in 2014.</p>
+    <p>My methodological interests include developing original datasets and applying quantitative methods. I'm trained in both quantitative and qualitative approaches, including statistical analysis, large-N studies, process tracing, and critical discourse analysis.</p>
+  </div>
+</div></main>
+
+<div class="activity"><div class="wrap">
+  <p class="activity-label">Recent activity</p>
+  <ul class="activity-list">
+    <li>
+      <span class="activity-date">Summer 2026</span>
+      <span class="activity-desc">Attended the Institute for Qualitative and Multi-Method Research (IQMR), Syracuse University.</span>
+    </li>
+    <li>
+      <span class="activity-date">Spring 2026</span>
+      <span class="activity-desc">Organized the Graduate Conference on Democratization in the Global South, Department of Politics and International Relations, FIU.</span>
+    </li>
+  </ul>
+</div></div>
+
+<div class="beyond"><div class="wrap">
+  <p class="beyond-label">Beyond research</p>
+  <p>When I'm not writing, I'm usually chasing a sunrise or sunset somewhere along the Miami coast.</p>
+  <div class="beyond-grid">
+    <img src="images/beach-1.jpg" alt="Sunset over the water with a yacht on the horizon">
+    <img src="images/beach-2.jpg" alt="Clouds catching the light at sunset over the ocean">
+    <img src="images/beach-3.jpg" alt="Sunrise through palm trees on the beach">
+  </div>
+</div></div>
+
+<footer><div class="wrap">© Mohammad Sayyadi</div></footer>
+
+</body>
+</html>
